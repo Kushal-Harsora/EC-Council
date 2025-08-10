@@ -26,9 +26,10 @@ const Main = () => {
                     </p>
                     <div
                         className=' h-full w-fit pr-32 max-md:pr-8 pl-6 max-md:pl-3 py-8 max-md:py-4 bg-[rgba(30,64,175,0.25)] rounded-md bg-clip-padding backdrop-blur-lg'
-                        style={{ clipPath: "polygon(90% 0, 100% 35%, 100% 100%, 0 100%, 0 0)",
-                            
-                         }}
+                        style={{
+                            clipPath: "polygon(90% 0, 100% 35%, 100% 100%, 0 100%, 0 0)",
+
+                        }}
                     >
                         <h2 className=' text-base text-white'>
                             Announcement
@@ -38,7 +39,7 @@ const Main = () => {
                         </h1>
                         <div className=' w-full h-fit flex flex-row justify-start items-center gap-5 mt-4'>
                             <Button
-                                className=' w-fit h-full bg-[#9B1C31] hover:bg-[#621421] text-white py-3.5 cursor-pointer flex items-center justify-center gap-0.5'
+                                className=' w-fit h-full bg-[#9B1C31] hover:bg-[#621421] text-white py-4 cursor-pointer flex items-center justify-center gap-0.5'
                                 onClick={() => { alert("Inquiry Initiated!"); }}
                             >
                                 Admission Enquiry

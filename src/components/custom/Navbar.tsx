@@ -88,7 +88,7 @@ const Navbar = () => {
 
             <div>
                 <Button
-                    className='max-md:hidden w-full h-full bg-[#9B1C31] hover:bg-[#621421] text-white px-3.5 py-3 cursor-pointer flex items-center justify-center gap-0.5'
+                    className='max-md:hidden w-full h-full bg-[#9B1C31] hover:bg-[#621421] text-white px-3.5 py-3.5 cursor-pointer flex items-center justify-center gap-0.5'
                     onClick={() => { alert("Inquiry Initiated!"); }}
                 >
                     Inquire Now

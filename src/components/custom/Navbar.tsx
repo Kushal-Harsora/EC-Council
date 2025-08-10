@@ -6,6 +6,15 @@ import Link from 'next/link';
 import React from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Button } from '../ui/button';
+import {
+    Drawer,
+    DrawerContent,
+    DrawerHeader,
+    DrawerTitle,
+    DrawerTrigger,
+    DrawerFooter,
+    DrawerClose
+} from "@/components/ui/drawer"
 
 const HoverDropdown = ({ label, children }: { label: string, children: React.ReactNode }) => {
     const [isHovered, setIsHovered] = React.useState(false);
@@ -40,7 +49,7 @@ const HoverDropdown = ({ label, children }: { label: string, children: React.Rea
 
 const Navbar = () => {
     return (
-        <section className="fixed top-0 left-0 h-[12.5vh] w-screen flex flex-row items-center justify-around p-2.5 bg-white z-50">
+        <section className="fixed top-0 left-0 h-[12.5vh] w-screen flex flex-row items-center justify-between p-2.5 bg-white z-50">
 
             {/* Desktop Nav */}
 
@@ -55,8 +64,8 @@ const Navbar = () => {
                     priority
                 />
             </div>
-            <div className="h-full w-full max-w-[45vw] max-md:hidden">
-                <ul className="w-full h-full flex flex-row justify-evenly items-center">
+            <div className="h-full w-full max-w-[70vw] max-md:hidden">
+                <ul className="w-full h-full flex flex-row justify-center items-center gap-4">
                     <li>
                         <Link href="#">About Us</Link>
                     </li>
@@ -86,9 +95,9 @@ const Navbar = () => {
                 </ul>
             </div>
 
-            <div>
+            <div className=' w-fit'>
                 <Button
-                    className='max-md:hidden w-full h-full bg-[#9B1C31] hover:bg-[#621421] text-white px-3.5 py-3.5 cursor-pointer flex items-center justify-center gap-0.5'
+                    className='max-md:hidden w-fit h-full bg-[#9B1C31] hover:bg-[#621421] text-white px-3.5 py-3.5 cursor-pointer flex items-center justify-center gap-0.5'
                     onClick={() => { alert("Inquiry Initiated!"); }}
                 >
                     Inquire Now
@@ -98,11 +107,55 @@ const Navbar = () => {
             </div>
 
             <div className='flex items-center justify-center'>
-                <Button
-                    className='hidden w-full h-full text-[#9B1C31] hover:bg-white border-[1px] border-[#621421] bg-white py-2.5 cursor-pointer max-md:flex items-center justify-center gap-0.5'
-                >
-                    <AlignJustify />
-                </Button>
+
+                <Drawer>
+                    <DrawerTrigger className=' cursor-pointer' asChild>
+                        <Button
+                            className='hidden w-fit h-full text-[#9B1C31] hover:bg-white border-[1px] border-[#621421] bg-white py-2.5 cursor-pointer max-md:flex items-center justify-center gap-0.5'
+                        >
+                            <AlignJustify />
+                        </Button>
+                    </DrawerTrigger>
+                    <DrawerContent>
+                        <div className=' w-full py-2 px-6 flex flex-col justify-center items-center gap-7'>
+                            <div className=' w-full h-full'>
+                                <DrawerHeader>
+                                    <DrawerTitle className=' text-base font-bold text-center text-blue-400'>
+                                        EC-Council
+                                    </DrawerTitle>
+                                </DrawerHeader>
+                                <div className=' h-fit w-full flex flex-col gap-2'>
+                                    <Link href={'/'} className=' w-full text-center border border-blue-400 p-2 rounded-md text-sm font-medium'>
+                                        Courses
+                                    </Link>
+                                    <Link href={'/'} className=' w-full text-center border border-blue-400 p-2 rounded-md text-sm font-medium'>
+                                        Services
+                                    </Link>
+                                    <Link href={'/'} className=' w-full text-center border border-blue-400 p-2 rounded-md text-sm font-medium'>
+                                        Financial Assistance
+                                    </Link>
+                                    <Link href={'/'} className=' w-full text-center border border-blue-400 p-2 rounded-md text-sm font-medium'>
+                                        Veterans
+                                    </Link>
+                                    <Link href={'/'} className=' w-full text-center border border-blue-400 p-2 rounded-md text-sm font-medium'>
+                                        News
+                                    </Link>
+                                    <Link href={'/'} className=' w-full text-center border border-blue-400 p-2 rounded-md text-sm font-medium'>
+                                        Careers
+                                    </Link>
+                                    <Link href={'/'} className=' w-full text-center border border-blue-400 p-2 rounded-md text-sm font-medium'>
+                                        About Us
+                                    </Link>
+                                </div>
+                                <DrawerFooter>
+                                    <DrawerClose asChild>
+                                        <Button variant="default" className=' w-full cursor-pointer p-3 bg-blue-400 text-white'>Close</Button>
+                                    </DrawerClose>
+                                </DrawerFooter>
+                            </div>
+                        </div>
+                    </DrawerContent>
+                </Drawer>
             </div>
         </section>
     );

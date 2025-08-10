@@ -9,13 +9,13 @@ const Join = () => {
     return (
         <React.Fragment>
             <section className=' h-[70vh] max-md:h-fit w-screen bg-white overflow-hidden grid md:grid-cols-2 max-md:grid-rows-1'>
-                <div className=' w-full h-full flex flex-col items-start justify-center gap-3.5 px-8 py-4'>
-                    <h1 className=' text-4xl'>
+                <div className=' w-full h-full flex flex-col items-start max-md:items-center justify-center gap-3.5 max-md:gap-2 px-8 max-md:px-3.5 py-4'>
+                    <h1 className=' text-4xl max-md:text-2xl font-bold'>
                         EC-Council University
                         Where Your Leadership Journey Begins
                     </h1>
 
-                    <div className=' relative w-full h-[320px] md:hidden z-10 my-6 px-0'>
+                    <div className=' relative w-full h-[320px] md:hidden z-10 my-2 px-0'>
                         <Image
                             src="/assets/home2.png"
                             alt="Join1"

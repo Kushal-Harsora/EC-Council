@@ -40,7 +40,7 @@ const HoverDropdown = ({ label, children }: { label: string, children: React.Rea
 
 const Navbar = () => {
     return (
-        <section className="h-[12.5vh] w-screen flex flex-row items-center justify-around p-2.5">
+        <section className="fixed top-0 left-0 h-[12.5vh] w-screen flex flex-row items-center justify-around p-2.5 bg-white z-50">
 
             {/* Desktop Nav */}
 

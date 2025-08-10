@@ -28,7 +28,7 @@ const HoverDropdown = ({ label, children }: { label: string, children: React.Rea
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -10 }}
                         transition={{ duration: 0.25, ease: 'easeInOut' }}
-                        className="absolute top-full left-0 mt-2 w-[200px] bg-white text-black flex flex-col items-start justify-start p-4 z-20 rounded-xl shadow-lg backdrop-blur-md"
+                        className="absolute top-full left-0 mt-2 w-[150px] bg-white text-black flex flex-col items-start justify-start p-4 z-20 rounded-xl shadow-lg backdrop-blur-md"
                     >
                         {children}
                     </motion.div>

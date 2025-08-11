@@ -84,7 +84,7 @@ padding:5px;
                         </div>
 
                         {/* Mobile: Combine Online Degrees + Resources into 2-col grid */}
-                        <div className="grid grid-cols-2 sm:block sm:contents gap-6">
+                        <div className="grid grid-cols-2 sm:contents gap-6">
                             {/* Online Degrees */}
                             <div>
                                 <hr className="border-gray-700 mb-4" />
@@ -124,8 +124,8 @@ padding:5px;
 
             {/* Middle Section */}
             <div className="w-full mx-auto px-6 py-16 text-center">
-                <h1 className="text-5xl text-[#BBBBBB] md:text-7xl font-bold leading-tight">
-                    EXAMPLE-XYZ UNIVERSITY
+                <h1 className="text-5xl text-[#BBBBBB] md:text-8xl leading-tight font-bold">
+                    EC-COUNCIL UNIVERSITY
                 </h1>
             </div>
 

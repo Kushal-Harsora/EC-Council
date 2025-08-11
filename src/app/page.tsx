@@ -3,6 +3,7 @@ import Footer from '@/components/custom/Footer'
 import Join from '@/components/custom/Join'
 import Main from '@/components/custom/Main'
 import Program from '@/components/custom/Program'
+import WhyUs from '@/components/custom/WhyUs'
 import React from 'react'
 
 const Page = () => {
@@ -14,6 +15,7 @@ const Page = () => {
         <Join />
         <BestClass />
         <Program />
+        <WhyUs />
         <Footer/>
       </main>
     </React.Fragment>

@@ -1,4 +1,5 @@
 import BestClass from '@/components/custom/BestClass'
+import Footer from '@/components/custom/Footer'
 import Join from '@/components/custom/Join'
 import Main from '@/components/custom/Main'
 import React from 'react'
@@ -11,6 +12,7 @@ const Page = () => {
         {/* EC-Council */}
         <Join />
         <BestClass />
+        <Footer/>
       </main>
     </React.Fragment>
   )

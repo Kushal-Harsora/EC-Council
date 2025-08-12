@@ -11,9 +11,8 @@ import React from 'react'
 const Page = () => {
   return (
     <React.Fragment>
-      <main className='h-full w-screen flex flex-1 flex-col items-center justify-center'>
+      <main className='h-full w-screen flex flex-1 flex-col items-center justify-center overflow-hidden'>
         <Main />
-        {/* EC-Council */}
         <Join />
         <BestClass />
         <Program />

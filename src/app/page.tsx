@@ -1,6 +1,7 @@
 import Alumni from '@/components/custom/Alumni'
 import BestClass from '@/components/custom/BestClass'
 import EdRem from '@/components/custom/EdRem'
+import FAQ from '@/components/custom/FAQ'
 import Footer from '@/components/custom/Footer'
 import Join from '@/components/custom/Join'
 import Main from '@/components/custom/Main'
@@ -19,6 +20,7 @@ const Page = () => {
         <WhyUs />
         <EdRem />
         <Alumni />
+        <FAQ />
         <Footer/>
       </main>
     </React.Fragment>

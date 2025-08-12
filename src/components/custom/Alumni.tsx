@@ -89,9 +89,9 @@ const Alumni = () => {
                     </div>
                 </div>
 
-                <div className=' w-full h-fit px-12 flex items-center justify-center'>
+                <div className=' w-full h-fit px-12 max-md:px-4 flex items-center justify-center'>
                     <div className=' w-full h-fit py-12 bg-gradient-to-r from-[#202A40] to-[#0B132B] text-white flex flex-col items-center justify-center gap-3 rounded-xl'>
-                        <h1 className=' text-3xl font-bold'>
+                        <h1 className=' text-3xl max-md:text-xl font-bold'>
                             Your Success is our priority
                         </h1>
                         <Button

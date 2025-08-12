@@ -33,32 +33,32 @@ const WhyUs = () => {
         {
             title: 'Program 1',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex similique.',
-            image: '/assets/p1.png',
+            image: '/assets/b1.png',
         },
         {
             title: 'Program 2',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex similique.',
-            image: '/assets/p2.png',
+            image: '/assets/b2.png',
         },
         {
             title: 'Program 3',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex similique.',
-            image: '/assets/p3.png',
+            image: '/assets/b3.jpg',
         },
         {
             title: 'Program 4',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex similique.',
-            image: '/assets/p4.png',
+            image: '/assets/b4.png',
         },
         {
             title: 'Program 5',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex similique.',
-            image: '/assets/p5.png',
+            image: '/assets/b5.png',
         },
         {
             title: 'Program 6',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex similique.',
-            image: '/assets/p6.png',
+            image: '/assets/b6.png',
         },
     ];
 

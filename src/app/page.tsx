@@ -1,4 +1,5 @@
 import BestClass from '@/components/custom/BestClass'
+import EdRem from '@/components/custom/EdRem'
 import Footer from '@/components/custom/Footer'
 import Join from '@/components/custom/Join'
 import Main from '@/components/custom/Main'
@@ -16,6 +17,7 @@ const Page = () => {
         <BestClass />
         <Program />
         <WhyUs />
+        <EdRem />
         <Footer/>
       </main>
     </React.Fragment>

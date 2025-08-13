@@ -49,26 +49,27 @@ const HoverDropdown = ({ label, children }: { label: string, children: React.Rea
 
 const Navbar = () => {
     return (
-        <section className="fixed top-0 left-0 h-[12.5vh] w-screen flex flex-row items-center justify-between p-2.5 bg-white z-50">
+        <section className="fixed top-0 left-0 h-[12.5vh] w-screen flex items-center justify-between px-16 max-md:px-8 py-2.5 bg-white z-50">
 
-            {/* Desktop Nav */}
-
-            <div className="max-w-[250px] flex items-center justify-center w-fit h-full aspect-video">
-                <Image
-                    src="/assets/logo.png"
-                    alt="EC-Council Logo"
-                    layout="responsive"
-                    width={100}
-                    height={100}
-                    className="object-contain"
-                    priority
-                />
+            {/* Logo */}
+            <div className="w-[160px] max-md:w-[120px] h-full flex items-center">
+                <div className="w-full aspect-square relative">
+                    <Image
+                        src="/assets/logo.png"
+                        alt="EC-Council Logo"
+                        layout="fill"
+                        className="object-contain"
+                        priority
+                    />
+                </div>
             </div>
-            <div className="h-full w-full max-w-[70vw] max-md:hidden">
-                <ul className="w-full h-full flex flex-row justify-center items-center gap-4">
+
+            <div className="flex-1 h-full flex items-center justify-center max-w-[70vw] max-md:hidden">
+                <ul className="flex flex-row items-center justify-center gap-6">
                     <li>
                         <Link href="#">About Us</Link>
                     </li>
+
                     <HoverDropdown label="Courses">
                         <Link href="#" className="text-center w-full hover:underline">Course 1</Link>
                         <Link href="#" className="text-center w-full hover:underline mt-1">Course 2</Link>
@@ -95,9 +96,9 @@ const Navbar = () => {
                 </ul>
             </div>
 
-            <div className=' w-fit'>
+            <div className='w-fit h-full flex items-center'>
                 <Button
-                    className='max-md:hidden w-fit h-full bg-[#9B1C31] hover:bg-[#621421] text-white px-3.5 py-3.5 cursor-pointer flex items-center justify-center gap-0.5'
+                    className=' w-fit h-[55px] max-md:h-[40px] bg-[#9B1C31] hover:bg-[#621421] text-white cursor-pointer flex items-center justify-center gap-0.5'
                     onClick={() => { alert("Inquiry Initiated!"); }}
                 >
                     Inquire Now
@@ -107,7 +108,6 @@ const Navbar = () => {
             </div>
 
             <div className='flex items-center justify-center'>
-
                 <Drawer>
                     <DrawerTrigger className=' cursor-pointer' asChild>
                         <Button

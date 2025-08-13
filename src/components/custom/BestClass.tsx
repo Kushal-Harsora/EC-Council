@@ -9,7 +9,7 @@ import { Separator } from '../ui/separator';
 const BestClass = () => {
     return (
         <React.Fragment>
-            <section className=' h-[60vh] max-md:h-fit w-screen bg-gray-50 overflow-hidden grid md:grid-cols-2 max-md:grid-rows-1'>
+            <section className=' h-[60vh] max-md:h-fit py-6 w-screen bg-gray-50 overflow-hidden grid md:grid-cols-2 max-md:grid-rows-1'>
                 <div className=' w-full h-full flex flex-col items-start max-md:items-center justify-center gap-3.5 max-md:gap-2 px-8 max-md:px-3.5 py-4'>
                     <h1 className=' text-4xl max-md:text-2xl font-bold'>
                         The Top 10 Best Online Master&apos;s in Cybersecurity by Fortune®
@@ -22,26 +22,28 @@ const BestClass = () => {
                             width={0}
                             height={0}
                             sizes="(max-width: 768px) 50vw, 320px"
-                            className="w-[80%] max-w-[320px] max-md:max-w-[250px] h-auto object-cover aspect-square rounded-3xl z-20"
+                            className="w-[80%] max-w-[320px] max-md:max-w-[300px] h-auto object-cover aspect-square rounded-3xl z-20"
                         />
 
-                        <div className=' w-full h-fit flex flex-row justify-evenly items-center py-6'>
+                        <div className=' w-full h-fit flex flex-row justify-evenly items-center max-md:items-start py-6'>
 
                             <div className=' w-fit'>
-                                <h1 className=' text-4xl font-semibold'>
+                                <h1 className=' text-4xl max-md:text-3xl text-center font-semibold'>
                                     20+
                                 </h1>
-                                <p className=' text-sm text-center'>
+                                <p className=' text-sm max-md:text-xs text-center'>
                                     Years of Legacy
                                 </p>
                             </div>
 
                             <div className=' w-fit'>
-                                <h1 className=' text-4xl font-semibold'>
+                                <h1 className=' text-4xl max-md:text-3xl text-center font-semibold'>
                                     140+
                                 </h1>
-                                <p className=' text-sm text-center'>
-                                    Countries with ECCU Students
+                                <p className=' text-sm max-md:text-xs text-center'>
+                                    Countries with ECCU 
+                                    <br className='md:hidden'/>
+                                    Students
                                 </p>
                             </div>
 

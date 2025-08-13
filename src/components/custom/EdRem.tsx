@@ -16,11 +16,11 @@ const EdRem = () => {
     return (
         <React.Fragment>
             <section className=' w-screen h-fit flex flex-col items-center justify-center'>
-                <div className=' w-screen h-fit py-6 px-8 flex flex-col items-center justify-center gap-8'>
-                    <h1 className=' text-4xl font-bold'>
+                <div className=' w-screen h-fit py-6 px-6 flex flex-col items-center justify-center gap-8 max-md:gap-4'>
+                    <h1 className=' text-4xl max-md:text-2xl text-center font-bold'>
                         Cyber Security Education Reimagined
                     </h1>
-                    <p className=' text-justify w-full h-fit px-44 max-md:px-2 py-2 text-lg'>
+                    <p className=' w-full h-fit px-44 max-md:px-2 py-2 text-lg max-md:text-sm text-center'>
                         We are revolutionising cyber security education. Beyond earning credentials, we offer a transformative learning experience designed to prepare you for leadership in the ever-evolving digital landscape.
                     </p>
                     <Image

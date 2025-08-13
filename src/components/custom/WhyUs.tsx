@@ -65,12 +65,12 @@ const WhyUs = () => {
 
     return (
         <React.Fragment>
-            <section className=' w-screen h-fit flex flex-col items-center justify-around gap-4'>
-                <div className=' w-screen h-fit py-6 px-8 flex flex-col items-center justify-center gap-8'>
-                    <h1 className=' text-4xl font-bold'>
+            <section className=' w-screen h-fit flex flex-col items-center justify-around gap-4 px-6'>
+                <div className=' w-full h-fit py-6 flex flex-col items-center justify-center gap-8 max-md:gap-4'>
+                    <h1 className=' text-4xl max-md:text-2xl text-center font-bold'>
                         Why EC-Council University is Right for You
                     </h1>
-                    <p className=' text-justify w-full h-fit px-44 max-md:px-2 py-2 text-lg'>
+                    <p className=' max-md:text-center w-full h-fit px-44 max-md:px-2 py-2 text-lg max-md:text-sm'>
                         With ECCU, you&apos;re not just earning a degree - you&apos;re becoming a future-ready cyber security leader. We take your long-term career success just as seriously as delivering an immediate return on your investment.
                         Once you enter the ECCU ecosystem, you&apos;ll have unrestricted access to everything you need to accomplish your cyber security learning goals - a state-of-the-art learning management system (LMS), internationally-renowned faculty, engaging and interactive learning resources, a 24x7 online library housing a vast collection of learning materials, exclusive networking opportunities with like-minded peers and cyber security experts, readily-available academic advisory and career counselling support, and so much more!
                     </p>

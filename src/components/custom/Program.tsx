@@ -3,7 +3,7 @@
 import React from 'react';
 import { Button } from '../ui/button';
 import { easeInOut, motion } from 'motion/react';
-import { MoveRight } from 'lucide-react';
+import { CircleChevronUp, MoveRight } from 'lucide-react';
 
 const cardVariants = {
   initial: { y: '75%' },
@@ -17,11 +17,20 @@ const cardVariants = {
 };
 
 const Card = ({ title, description, image }: { title: string, description: string, image: string }) => {
+  const [isHovered, setIsHovered] = React.useState<boolean>(false);
+
+  const handleMobileToggle = () => {
+    if (window.innerWidth <= 768) {
+      setIsHovered(prev => !prev);
+    }
+  };
+
   return (
     <motion.div
-      className="relative bg-cover bg-center w-[325px] h-[375px] aspect-square group rounded-xl shadow overflow-hidden"
+      className="relative bg-cover bg-center w-[325px] h-[375px] max-md:w-full aspect-square group rounded-xl shadow overflow-hidden"
       style={{ backgroundImage: `url(${image})` }}
       initial="initial"
+      animate={isHovered ? "hover" : "initial"}
       whileHover="hover"
     >
       <motion.div
@@ -29,15 +38,24 @@ const Card = ({ title, description, image }: { title: string, description: strin
         className="absolute bottom-0 w-full h-full backdrop-blur-lg bg-black/20 z-10"
       >
         <div className="p-4 w-full h-[25%] text-white">
-          <h3 className="text-2xl font-semibold">{title}</h3>
+          <h3 className="text-2xl flex flex-row justify-between items-center font-semibold">
+            {title}
+            <CircleChevronUp
+              className={`md:hidden w-[32px] aspect-square cursor-pointer transform transition-transform duration-300 ${isHovered ? 'rotate-180' : ''
+                }`}
+              onClick={handleMobileToggle}
+            />
+          </h3>
         </div>
         <p className="text-base text-wrap text-justify max-h-[225px] overflow-hidden text-white px-4">
           {description}
         </p>
-        <div className='w-full max-w-[325px] max-h-[75px] h-full flex items-center justify-start px-4'>
+        <div className="w-full max-w-[325px] max-h-[75px] h-full flex items-center justify-start px-4">
           <Button
-            className=' w-fit h-fit text-[#9B1C31] hover:text-white bg-white hover:bg-[#9B1C31] py-4 cursor-pointer flex items-center justify-center gap-0.5'
-            onClick={() => { alert("Inquiry Initiated!"); }}
+            className="w-fit h-fit text-[#9B1C31] hover:text-white bg-white hover:bg-[#9B1C31] py-4 cursor-pointer flex items-center justify-center gap-0.5"
+            onClick={() => {
+              alert('Inquiry Initiated!');
+            }}
           >
             Inquire Now
             <MoveRight />
@@ -47,6 +65,7 @@ const Card = ({ title, description, image }: { title: string, description: strin
     </motion.div>
   );
 };
+
 
 const Program = () => {
   const programData1 = [
@@ -86,10 +105,10 @@ const Program = () => {
   ];
 
   return (
-    <div className="w-screen h-fit bg-white px-8 py-12 flex flex-col items-center justify-center gap-6">
+    <div className="w-screen h-fit bg-white px-6 py-12 flex flex-col items-center justify-center gap-6">
       <div className='h-full max-md:h-fit grid md:grid-cols-2'>
-        <div className=' w-full h-full flex flex-col items-start justify-start gap-4 px-4 max-md:py-4'>
-          <h1 className="w-full text-4xl font-bold text-left">
+        <div className=' w-full h-full flex flex-col items-start justify-start gap-4 max-md:py-4'>
+          <h1 className="w-full text-4xl max-md:text-2xl font-bold text-left">
             Choose the Program that matches your ambitions
           </h1>
           <p className=" text-base text-wrap text-justify">

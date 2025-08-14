@@ -128,7 +128,7 @@ const Program = () => {
           ))}
         </div>
       </div>
-      <div className="grid md:grid-cols-4 max-md:grid-rows-4 max-md:gap-4 items-center justify-center w-full h-full px-4">
+      <div className="grid md:grid-cols-4 max-md:grid-rows-4 max-md:gap-4 items-center justify-center w-full h-full">
         {programData2.map((card, index) => (
           <Card
             key={index}

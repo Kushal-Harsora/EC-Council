@@ -49,10 +49,10 @@ const HoverDropdown = ({ label, children }: { label: string, children: React.Rea
 
 const Navbar = () => {
     return (
-        <section className="fixed top-0 left-0 h-[12.5vh] w-screen flex items-center justify-between px-16 max-md:px-8 py-2.5 bg-white z-50">
+        <section className="fixed top-0 left-0 h-[12.5vh] w-screen flex items-center justify-between px-16 max-md:px-6 py-2.5 bg-white z-50">
 
             {/* Logo */}
-            <div className="w-[160px] max-md:w-[120px] h-full flex items-center">
+            <div className="w-[160px] max-md:w-[100px] h-full flex items-center">
                 <div className="w-full aspect-square relative">
                     <Image
                         src="/assets/logo.png"
@@ -96,14 +96,14 @@ const Navbar = () => {
                 </ul>
             </div>
 
-                <Button
-                    className=' w-[180px] max-md:w-[140px] h-[55px] max-md:h-[40px] bg-[#9B1C31] hover:bg-[#621421] text-white cursor-pointer py-2.5 px-32 flex items-center justify-center gap-2.5'
-                    onClick={() => { alert("Inquiry Initiated!"); }}
-                >
-                    Inquire Now
-                    <MoveRight />
-                </Button>
-            
+            <Button
+                className=' w-[180px] max-md:w-[140px] h-[55px] max-md:h-[40px] bg-[#9B1C31] hover:bg-[#621421] text-white cursor-pointer py-2.5 md:px-32 flex items-center justify-center gap-2.5'
+                onClick={() => { alert("Inquiry Initiated!"); }}
+            >
+                Inquire Now
+                <MoveRight />
+            </Button>
+
 
             <div className='flex items-center justify-center'>
                 <Drawer>

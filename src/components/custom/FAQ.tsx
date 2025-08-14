@@ -12,7 +12,7 @@ import { Button } from '../ui/button'
 const FAQ = () => {
   return (
     <React.Fragment>
-      <section className=' w-screen h-fit px-4 py-6 flex flex-col items-center justify-center'>
+      <section className=' w-screen h-fit px-4 py-6 flex flex-col items-center justify-center overflow-hidden'>
         <div className=' w-full h-fit py-2 flex items-center justify-center'>
           <h1 className=' text-4xl max-md:text-2xl font-bold'>
             Frequently Asked Questionsnpm 

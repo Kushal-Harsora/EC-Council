@@ -8,7 +8,7 @@ import { MoveRight } from 'lucide-react'
 const Main = () => {
     return (
         <React.Fragment>
-            <section className=' h-screen w-screen flex items-center justify-center'>
+            <section className=' h-screen w-screen flex items-center justify-center overflow-hidden'>
                 <Image
                     src={'/assets/home.jpg'}
                     alt='Main Section'

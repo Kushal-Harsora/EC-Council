@@ -7,7 +7,7 @@ import { MoveRight } from 'lucide-react';
 const Alumni = () => {
     return (
         <React.Fragment>
-            <section className=' w-screen h-fit flex flex-col items-center justify-center px-8 max-md:px-2 gap-6 py-4'>
+            <section className=' w-screen h-fit flex flex-col items-center justify-center px-8 max-md:px-2 gap-6 py-4 overflow-hidden'>
                 <div className=' grid md:grid-cols-2 max-md:grid-rows-2 py-8'>
                     <div className=' w-full h-full flex items-center justify-center md:rounded-3xl overflow-hidden'>
                         <video
@@ -89,24 +89,33 @@ const Alumni = () => {
                 </div>
 
                 <div className="relative w-full h-fit px-12 max-md:px-4 flex items-center justify-center">
-                    <div className="relative w-full h-fit py-12 bg-gradient-to-r from-[#202A40] to-[#0B132B] text-white flex flex-col items-center justify-center gap-6 rounded-xl overflow-hidden">
+                    <div className="relative w-full max-md:w-[353px] h-fit max-md:h-[366px] py-12 bg-gradient-to-r from-[#202A40] to-[#0B132B] text-white flex flex-col items-center justify-center gap-6 rounded-xl overflow-hidden">
                         <div className="absolute inset-0 z-0 pointer-events-none">
                             <div
-                                className="absolute w-[200px] max-md:w-[250px] aspect-square left-[-120px] top-1/2 -translate-y-1/2 rotate-90 rounded-full"
+                                className=" max-md:hidden absolute w-[200px] max-md:w-[250px] aspect-square left-[-120px] max-md:left-0 max-md:translate-x-1/2 top-1/2 -translate-y-1/2 rotate-90 rounded-full"
                                 style={{ background: 'linear-gradient(102.35deg,#11244B -3.05%,#4999C2 100%)' }}
                             />
                             <div
-                                className="absolute w-[200px] max-md:w-[250px] aspect-square left-[-60px] top-1/2 -translate-y-1/2 rotate-90 rounded-full"
+                                className=" max-md:hidden absolute w-[200px] max-md:w-[250px] aspect-square left-[-60px] max-md:left-0 top-1/2 max-md:top-0 -translate-y-1/2 rotate-90 rounded-full"
                                 style={{ background: 'linear-gradient(102.35deg,#142865 -3.05%,#202A40 100%)' }}
                             />
+
+                            <div className="md:hidden absolute left-[-12.5px] top-[225.25px] w-[353px] h-[366px] rounded-full bg-[linear-gradient(102.35deg,_#142865_-3.05%,_#202A40_100%)] z-20"></div>
+
                             <div
-                                className="absolute w-[200px] max-md:w-[250px] aspect-square left-[20px] top-1/2 -translate-y-1/2 rotate-90 rounded-full"
+                                className=" max-md:hidden absolute w-[200px] max-md:w-[250px] aspect-square left-[20px] max-md:left-0 top-1/2 max-md:top-0 -translate-y-1/2 rotate-90 rounded-full"
                                 style={{ background: 'linear-gradient(102.35deg,#00081A -3.05%,#15539C 100%)' }}
                             />
+
+                            <div className="md:hidden absolute left-[-12.5px] top-[-165px] w-[353px] h-[366px] rounded-full rotate-[-90deg] bg-[linear-gradient(58.82deg,_#192540_17.05%,_rgba(49,66,142,0)_79.25%)] z-20"></div>
+
                             <div
-                                className="absolute w-[200px] max-md:w-[120px] aspect-square left-[100px] top-1/2 -translate-y-1/2 rounded-full"
+                                className=" max-md:hidden absolute w-[200px] max-md:w-[250px] aspect-square left-[100px] top-1/2 -translate-y-1/2 rounded-full"
                                 style={{ background: 'linear-gradient(58.82deg,#192540 17.05%,rgba(49,66,142,0) 79.25%)' }}
                             />
+
+                            <div className="md:hidden absolute left-[-12.5px] top-0 w-[353px] h-[366px] rounded-full bg-[linear-gradient(102.35deg,_#00081A_-3.05%,_#15539C_100%)] z-10"></div>
+
                         </div>
 
                         {/* Foreground Content */}

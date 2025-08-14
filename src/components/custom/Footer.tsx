@@ -11,7 +11,7 @@ export default function Footer() {
     ];
     // font-[satoshi-variable]
     return (
-        <footer className="bg-[#0a100d] w-full text-white">
+        <footer className="bg-[#0a100d] w-full text-white overflow-hidden">
             <style jsx>{`
 footer {
   background-color: #0a0a0a; /* base black */

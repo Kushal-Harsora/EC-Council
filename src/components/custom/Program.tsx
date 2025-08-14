@@ -106,8 +106,8 @@ const Program = () => {
 
   return (
     <div className="w-screen h-fit bg-white px-6 py-12 flex flex-col items-center justify-center gap-6">
-      <div className='h-full max-md:h-fit grid md:grid-cols-2 px-4'>
-        <div className=' w-full h-full flex flex-col items-start justify-start gap-4 max-md:py-4'>
+      <div className='h-full max-md:h-fit grid md:grid-cols-2 gap-3 px-4 max-md:px-0'>
+        <div className=' w-full h-full flex flex-col items-start justify-start gap-4 max-md:py-4 px-4'>
           <h1 className="w-full text-4xl max-md:text-2xl font-bold text-left">
             Choose the Program that matches your ambitions
           </h1>

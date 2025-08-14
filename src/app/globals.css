@@ -106,6 +106,9 @@
   font-family: var(--font-satoshi);
   font-weight: 400;
   overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 ::selection {

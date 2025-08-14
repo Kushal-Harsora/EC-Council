@@ -25,7 +25,7 @@ const Main = () => {
                         That&apos;s All About You.
                     </p>
                     <div
-                        className=' h-full w-full pr-32 max-md:pr-8 pl-6 max-md:pl-3 py-8 max-md:py-4 bg-[rgba(30,64,175,0.35)] rounded-md bg-clip-padding backdrop-blur-lg overflow-hidden z-10'
+                        className=' h-full max-md:w-[330px] w-full md:pr-32 max-md:pr-0 pl-6 max-md:pl-2.5 py-8 max-md:py-4 bg-[rgba(30,64,175,0.35)] rounded-md bg-clip-padding backdrop-blur-lg overflow-hidden z-10'
                         style={{
                             clipPath: "polygon(90% 0, 100% 35%, 100% 100%, 0 100%, 0 0)",
 

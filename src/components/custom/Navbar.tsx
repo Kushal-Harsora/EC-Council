@@ -27,7 +27,7 @@ const HoverDropdown = ({ label, children }: { label: string, children: React.Rea
         >
             <Link href="#" className="flex flex-row gap-1 items-center">
                 {label}
-                <ChevronDown />
+                <ChevronDown className=' font-[100]' />
             </Link>
 
             <AnimatePresence>
@@ -96,22 +96,20 @@ const Navbar = () => {
                 </ul>
             </div>
 
-            <div className='w-fit h-full flex items-center'>
                 <Button
-                    className=' w-fit h-[55px] max-md:h-[40px] bg-[#9B1C31] hover:bg-[#621421] text-white cursor-pointer flex items-center justify-center gap-0.5'
+                    className=' w-[180px] max-md:w-[140px] h-[55px] max-md:h-[40px] bg-[#9B1C31] hover:bg-[#621421] text-white cursor-pointer py-2.5 px-32 flex items-center justify-center gap-2.5'
                     onClick={() => { alert("Inquiry Initiated!"); }}
                 >
                     Inquire Now
-                    |
                     <MoveRight />
                 </Button>
-            </div>
+            
 
             <div className='flex items-center justify-center'>
                 <Drawer>
                     <DrawerTrigger className=' cursor-pointer' asChild>
                         <Button
-                            className='hidden w-fit h-full text-[#9B1C31] hover:bg-white border-[1px] border-[#621421] bg-white py-2.5 cursor-pointer max-md:flex items-center justify-center gap-0.5'
+                            className='hidden w-fit h-full text-[#9B1C31] hover:bg-white border-[1px] border-[#621421] bg-white py-2.5 px-4 cursor-pointer max-md:flex items-center justify-center gap-0.5'
                         >
                             <AlignJustify />
                         </Button>

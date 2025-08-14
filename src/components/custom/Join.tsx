@@ -8,7 +8,7 @@ import Image from 'next/image';
 const Join = () => {
     return (
         <React.Fragment>
-            <section className=' h-[70vh] max-md:h-fit w-screen bg-white overflow-hidden grid md:grid-cols-2 max-md:grid-rows-1'>
+            <section className=' h-[70vh] max-md:h-fit w-screen bg-white overflow-hidden grid md:grid-cols-2 max-md:grid-rows-1 px-6'>
                 <div className=' w-full h-full flex flex-col items-start max-md:items-center justify-center gap-3.5 max-md:gap-2 px-8 max-md:px-3.5 py-4'>
                     <h1 className=' text-4xl max-md:text-2xl font-bold'>
                         EC-Council University

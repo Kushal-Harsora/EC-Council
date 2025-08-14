@@ -15,7 +15,7 @@ const EdRem = () => {
 
     return (
         <React.Fragment>
-            <section className=' w-screen h-fit flex flex-col items-center justify-center'>
+            <section className=' w-screen h-fit flex flex-col items-center justify-center px-4'>
                 <div className=' w-screen h-fit py-6 px-6 flex flex-col items-center justify-center gap-8 max-md:gap-4'>
                     <h1 className=' text-4xl max-md:text-2xl text-center font-bold'>
                         Cyber Security Education Reimagined
@@ -29,7 +29,7 @@ const EdRem = () => {
                         width={0}
                         height={0}
                         sizes="(max-width: 768px) 50vw, 1140px"
-                        className='w-full max-w-[1140px] max-md:max-w-[510px] h-auto object-cover aspect-video rounded-3xl z-10'
+                        className='w-full max-w-[1140px] max-md:max-w-[510px] h-auto object-cover aspect-video rounded-3xl z-10 px-3 py-2'
                     />
                 </div>
 

@@ -9,7 +9,7 @@ import { Separator } from '../ui/separator';
 const BestClass = () => {
     return (
         <React.Fragment>
-            <section className=' h-[60vh] max-md:h-fit py-6 w-screen bg-gray-50 overflow-hidden grid md:grid-cols-2 max-md:grid-rows-1'>
+            <section className=' h-[60vh] max-md:h-fit py-6 w-screen bg-gray-50 overflow-hidden grid md:grid-cols-2 max-md:grid-rows-1 px-6'>
                 <div className=' w-full h-full flex flex-col items-start max-md:items-center justify-center gap-3.5 max-md:gap-2 px-8 max-md:px-3.5 py-4'>
                     <h1 className=' text-4xl max-md:text-2xl font-bold'>
                         The Top 10 Best Online Master&apos;s in Cybersecurity by Fortune®
@@ -28,7 +28,7 @@ const BestClass = () => {
                         <div className=' w-full h-fit flex flex-row justify-evenly items-center max-md:items-start py-6'>
 
                             <div className=' w-fit'>
-                                <h1 className=' text-4xl max-md:text-3xl text-center font-semibold'>
+                                <h1 className=' text-4xl max-md:text-3xl text-center font-medium'>
                                     20+
                                 </h1>
                                 <p className=' text-sm max-md:text-xs text-center'>
@@ -37,7 +37,7 @@ const BestClass = () => {
                             </div>
 
                             <div className=' w-fit'>
-                                <h1 className=' text-4xl max-md:text-3xl text-center font-semibold'>
+                                <h1 className=' text-4xl max-md:text-3xl text-center font-medium'>
                                     140+
                                 </h1>
                                 <p className=' text-sm max-md:text-xs text-center'>
@@ -74,7 +74,7 @@ const BestClass = () => {
 
                     <div className=' w-fit h-fit'>
                         <Separator className=' w-full h-[0.5px]' orientation={'horizontal'} />
-                        <h1 className=' text-7xl font-semibold'>
+                        <h1 className=' text-7xl font-light'>
                             20+
                         </h1>
                         <p className=' text-base'>
@@ -84,7 +84,7 @@ const BestClass = () => {
 
                     <div className=' w-fit h-fit'>
                         <Separator className=' w-full h-[0.5px]' orientation={'horizontal'} />
-                        <h1 className=' text-7xl font-semibold'>
+                        <h1 className=' text-7xl font-light'>
                             140+
                         </h1>
                         <p className=' text-base'>

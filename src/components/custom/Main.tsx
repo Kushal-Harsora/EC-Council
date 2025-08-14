@@ -19,7 +19,7 @@ const Main = () => {
                 />
 
                 <div className=' absolute bottom-[5vh] max-md:bottom-[2.5vh] left-[2.5vw] max-md:left-[1vw] max-md:px-4 z-20 flex flex-col justify-start gap-[7.5vh] max-md:gap-[2vh]'>
-                    <p className=' text-[58px] leading-tight max-md:text-[32px] font-bold text-white'>
+                    <p className=' text-[58px] leading-tight max-md:text-[32px] font-medium text-white'>
                         The Cyber Security University,
                         <br />
                         That&apos;s All About You.

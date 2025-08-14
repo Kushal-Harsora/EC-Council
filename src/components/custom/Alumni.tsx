@@ -9,22 +9,22 @@ const Alumni = () => {
         <React.Fragment>
             <section className=' w-screen h-fit flex flex-col items-center justify-center px-8 max-md:px-2 gap-6 py-4'>
                 <div className=' grid md:grid-cols-2 max-md:grid-rows-2 py-8'>
-                    <div className=' w-full h-full flex items-center justify-center rounded-3xl overflow-hidden'>
+                    <div className=' w-full h-full flex items-center justify-center md:rounded-3xl overflow-hidden'>
                         <video
                             src="/assets/alumni.mp4"
                             autoPlay
                             muted
                             loop
                             playsInline
-                            className="w-full h-auto object-contain aspect-video rounded-3xl z-10"
+                            className="w-full h-auto object-contain aspect-video md:rounded-3xl z-10"
                         />
                     </div>
                     <div className=' h-full w-full flex flex-col items-center justify-center gap-6 px-12'>
-                        <h1 className='text-5xl font-bold max-md:text-4xl'>
+                        <h1 className='text-5xl font-bold text-center max-md:text-3xl'>
                             Voices of Success:
                             Hear from Our Alumni
                         </h1>
-                        <p className=' text-lg text-justify w-full h-fit'>
+                        <p className=' text-lg max-md:text-sm text-center w-full h-fit'>
                             Discover the stories of growth, success, and transformation from our alumni&apos;s journeys with us.
                         </p>
                         <Button
@@ -36,7 +36,7 @@ const Alumni = () => {
                         </Button>
                     </div>
 
-                    <div className=' w-screen h-fit flex flex-col items-center justify-center gap-8 py-12'>
+                    <div className=' w-screen h-fit flex flex-col items-center justify-center gap-8 py-12 max-md:py-6 px-6'>
                         <h1 className='w-full text-5xl max-md:text-3xl text-center font-bold'>
                             Our Commitment to Quality and Excellence
                         </h1>
@@ -44,7 +44,7 @@ const Alumni = () => {
                             ECCU&apos;s online cyber security programs are crafted to empower driven professionals to turn their aspirations into reality and achieve their ultimate career dreams.
                         </p>
                         <div className='w-full h-fit grid md:grid-cols-3 max-md:grid-rows-3'>
-                            <div className='flex flex-col items-center justify-center gap-4'>
+                            <div className='flex flex-col items-center justify-center gap-4  max-md:gap-6'>
                                 <h1 className=' text-8xl max-md:text-7xl'>
                                     <strong>1</strong> <span className='text-4xl'>in</span> <strong>2</strong>
                                 </h1>
@@ -90,19 +90,17 @@ const Alumni = () => {
 
                 <div className="relative w-full h-fit px-12 max-md:px-4 flex items-center justify-center">
                     <div className="relative w-full h-fit py-12 bg-gradient-to-r from-[#202A40] to-[#0B132B] text-white flex flex-col items-center justify-center gap-6 rounded-xl overflow-hidden">
-
-                        {/* Background Circles - Vertically Centered */}
                         <div className="absolute inset-0 z-0 pointer-events-none">
                             <div
-                                className="absolute w-[200px] max-md:w-[120px] aspect-square left-[-120px] top-1/2 -translate-y-1/2 rotate-90 rounded-full"
+                                className="absolute w-[200px] max-md:w-[250px] aspect-square left-[-120px] top-1/2 -translate-y-1/2 rotate-90 rounded-full"
                                 style={{ background: 'linear-gradient(102.35deg,#11244B -3.05%,#4999C2 100%)' }}
                             />
                             <div
-                                className="absolute w-[200px] max-md:w-[120px] aspect-square left-[-60px] top-1/2 -translate-y-1/2 rotate-90 rounded-full"
+                                className="absolute w-[200px] max-md:w-[250px] aspect-square left-[-60px] top-1/2 -translate-y-1/2 rotate-90 rounded-full"
                                 style={{ background: 'linear-gradient(102.35deg,#142865 -3.05%,#202A40 100%)' }}
                             />
                             <div
-                                className="absolute w-[200px] max-md:w-[120px] aspect-square left-[20px] top-1/2 -translate-y-1/2 rotate-90 rounded-full"
+                                className="absolute w-[200px] max-md:w-[250px] aspect-square left-[20px] top-1/2 -translate-y-1/2 rotate-90 rounded-full"
                                 style={{ background: 'linear-gradient(102.35deg,#00081A -3.05%,#15539C 100%)' }}
                             />
                             <div

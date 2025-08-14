@@ -65,7 +65,7 @@ const WhyUs = () => {
 
     return (
         <React.Fragment>
-            <section className=' w-screen h-fit flex flex-col items-center justify-around gap-4 px-6'>
+            <section className=' w-screen h-fit flex flex-col items-center justify-around gap-4 px-6 max-md:px-4'>
                 <div className=' w-full h-fit py-6 flex flex-col items-center justify-center gap-8 max-md:gap-4'>
                     <h1 className=' text-4xl max-md:text-2xl text-center font-bold'>
                         Why EC-Council University is Right for You

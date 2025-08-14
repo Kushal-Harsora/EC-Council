@@ -47,7 +47,7 @@ const EdRem = () => {
                                     width={0}
                                     height={0}
                                     sizes="(max-width: 640px) 150px, (max-width: 1024px) 200px"
-                                    className="w-fit h-fit object-contain rounded-xl z-10 p-2 mx-12 filter brightness-0 invert"
+                                    className="w-fit h-[60px] object-contain rounded-xl z-10 p-2 mx-12 filter brightness-0 invert"
                                 />
                             </div>
                         ))}

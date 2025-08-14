@@ -9,7 +9,7 @@ const Join = () => {
     return (
         <React.Fragment>
             <section className=' h-[70vh] max-md:h-fit w-screen bg-white overflow-hidden grid md:grid-cols-2 max-md:grid-rows-1 px-6'>
-                <div className=' w-full h-full flex flex-col items-start max-md:items-center justify-center gap-3.5 max-md:gap-2 px-8 max-md:px-3.5 py-4'>
+                <div className=' w-full h-full flex flex-col items-start max-md:items-center justify-center gap-3.5 max-md:gap-2 px-4 max-md:px-3.5 py-4'>
                     <h1 className=' text-4xl max-md:text-2xl font-bold'>
                         EC-Council University
                         Where Your Leadership Journey Begins
@@ -22,14 +22,14 @@ const Join = () => {
                             width={0}
                             height={0}
                             sizes="(max-width: 768px) 50vw, 320px"
-                            className="w-[80%] max-w-[320px] max-md:max-w-[210px] h-auto absolute top-[10%] left-0 object-cover aspect-square border-[7.5px] border-white rounded-3xl z-20 scale-x-[-1]"
+                            className="w-full max-w-[320px] max-md:max-w-[210px] h-auto absolute top-[10%] left-[-2.5vw] object-cover aspect-square border-[7.5px] border-white rounded-3xl z-20 scale-x-[-1]"
                         />
                         <Image src="/assets/home3.png"
                             alt="Join2"
                             width={0}
                             height={0}
                             sizes="(max-width: 768px) 50vw, 320px"
-                            className='w-[80%] max-w-[320px] max-md:max-w-[210px] h-auto absolute top-[25%] left-[40%] object-cover aspect-square rounded-3xl z-10'
+                            className='w-full max-w-[320px] max-md:max-w-[210px] h-auto absolute top-[25%] left-[30%] object-cover aspect-square rounded-3xl z-10'
                         />
                     </div>
                     <p className=' w-full text-wrap text-justify'>

@@ -46,7 +46,7 @@ const Alumni = () => {
                         <div className='w-full h-fit grid md:grid-cols-3 max-md:grid-rows-3'>
                             <div className='flex flex-col items-center justify-center gap-4  max-md:gap-6'>
                                 <h1 className=' text-8xl max-md:text-7xl'>
-                                    <strong>1</strong> <span className='text-4xl'>in</span> <strong>2</strong>
+                                    <span className='font-medium'>1</span> <span className='text-4xl'>in</span> <span className=' font-medium'>2</span>
                                 </h1>
                                 <p className='text-xl max-md:text-base w-full text-center'>
                                     Secured
@@ -61,7 +61,7 @@ const Alumni = () => {
                             </div>
                             <div className='flex flex-col items-center justify-center gap-4'>
                                 <h1 className=' text-8xl max-md:text-7xl'>
-                                    <strong>93%</strong>
+                                    <span className=' font-medium'>93%</span>
                                 </h1>
                                 <p className='text-xl max-md:text-base w-full text-center'>
                                     Achieved Their
@@ -73,7 +73,7 @@ const Alumni = () => {
                             </div>
                             <div className='flex flex-col items-center justify-center gap-4'>
                                 <h1 className=' text-8xl max-md:text-7xl'>
-                                    <strong>2</strong> <span className='text-4xl'>out of</span> <strong>3</strong>
+                                    <span className=' font-medium'>2</span> <span className='text-4xl'>out of</span> <span className=' font-medium'>3</span>
                                 </h1>
                                 <p className='text-xl max-md:text-base w-full text-center'>
                                     Experienced

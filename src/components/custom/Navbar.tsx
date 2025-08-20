@@ -1,6 +1,6 @@
 'use client';
 
-import { AlignJustify, ChevronDown, MoveRight } from 'lucide-react';
+import { AlignJustify, MoveRight } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
@@ -27,7 +27,8 @@ const HoverDropdown = ({ label, children }: { label: string, children: React.Rea
         >
             <Link href="#" className="flex flex-row gap-1 items-center">
                 {label}
-                <ChevronDown className=' font-[100]' />
+                {/* <ChevronDown className=' text-[10px]' /> */}
+                <Image src={'/nav-icon.svg'} alt='nav-icon' width={17.75} height={13.25} />
             </Link>
 
             <AnimatePresence>

@@ -327,8 +327,8 @@ const Page = () => {
         {/* Join Them Section */}
 
         <section className=' h-fit max-md:h-fit w-screen bg-white overflow-hidden grid md:grid-cols-2 max-md:grid-rows-1 px-16 max-md:px-6 py-24 mb-8 max-md:py-6'>
-          <div className=' w-full h-full flex flex-col items-start max-md:items-center justify-center gap-3.5 max-md:gap-2 py-4'>
-            <h1 className=' text-5xl max-md:text-2xl font-bold'>
+          <div className=' w-full h-full flex flex-col items-start max-md:items-center justify-center gap-6 max-md:gap-2 py-4'>
+            <h1 className='w-4/5 text-[42px] max-md:text-2xl font-bold md:leading-tight'>
               EC-Council University
               Where Your Leadership Journey Begins
             </h1>
@@ -382,7 +382,7 @@ const Page = () => {
         {/* BestClass Section */}
         <section className=' h-fit w-screen bg-gray-50 overflow-hidden grid md:grid-cols-2 max-md:grid-rows-1 py-12 px-16 max-md:px-6'>
           <div className=' w-full h-full flex flex-col items-start max-md:items-center justify-center gap-3.5 max-md:gap-8 py-4'>
-            <h1 className=' text-4xl max-md:text-2xl font-bold'>
+            <h1 className=' text-[42px] md:leading-tight max-md:text-2xl font-bold'>
               The Top 10 Best Online Master&apos;s in Cybersecurity by Fortune®
             </h1>
 
@@ -478,7 +478,7 @@ const Page = () => {
         <div className="w-screen h-fit bg-white max-md:px-6 px-16 py-12 flex flex-col items-center justify-center gap-6">
           <div className='h-full max-md:h-fit grid md:grid-cols-2 gap-3 max-md:gap-4'>
             <div className=' w-[95%] max-md:w-full h-full flex flex-col items-start justify-start gap-4 max-md:py-4'>
-              <h1 className="w-full text-4xl max-md:text-2xl font-bold text-left">
+              <h1 className="w-full text-[42px] md:leading-tight max-md:text-2xl font-bold text-left">
                 Choose the Program that matches your ambitions
               </h1>
               <p className=" text-base text-wrap text-left">
@@ -513,7 +513,7 @@ const Page = () => {
 
         <section className=' w-screen h-fit flex flex-col items-center justify-around gap-4 px-16 max-md:px-6'>
           <div className=' w-full h-fit py-6 flex flex-col items-center justify-center gap-8 max-md:gap-4'>
-            <h1 className=' text-4xl max-md:text-2xl text-center font-bold'>
+            <h1 className=' text-[42px] md:leading-tight max-md:text-2xl text-center font-bold'>
               Why EC-Council University is Right for You
             </h1>
             <p className=' max-md:text-center w-full h-fit px-44 max-md:px-2 py-2 text-lg max-md:text-sm'>
@@ -546,7 +546,7 @@ const Page = () => {
 
         <section className=' w-screen h-fit flex flex-col items-center justify-center px-16 max-md:px-6 overflow-hidden mt-12 max-md:mt-8'>
           <div className=' w-screen h-fit py-6 flex flex-col items-center justify-center gap-8 max-md:gap-4'>
-            <h1 className=' text-4xl max-md:text-2xl text-center font-bold'>
+            <h1 className=' text-[42px] md:leading-tight max-md:text-2xl text-center font-bold'>
               Cyber Security Education Reimagined
             </h1>
             <p className=' w-full h-fit px-48 max-md:px-6 py-2 text-lg max-md:text-sm text-center'>
@@ -563,7 +563,7 @@ const Page = () => {
           </div>
 
           <div className=' h-fit w-screen flex flex-col items-center justify-center bg-[#202A40] py-8'>
-            <h1 className=' text-5xl max-md:text-3xl font-bold text-white text-center w-full h-fit py-12'>
+            <h1 className=' text-[42px] md:leading-tight max-md:text-3xl font-bold text-white text-center w-full h-fit py-12'>
               Accreditations and Recognitions
             </h1>
             <Marquee pauseOnHover className="[--duration:20s]">
@@ -598,12 +598,12 @@ const Page = () => {
                 className="w-full h-auto object-contain aspect-video md:rounded-3xl z-10"
               />
             </div>
-            <div className=' h-full w-full flex flex-col items-center justify-center gap-6 max-md:mt-4'>
-              <h1 className='text-4xl font-bold text-center max-md:text-2xl'>
+            <div className=' h-full w-full flex flex-col items-start max-md:items-center justify-center gap-6 max-md:gap-3 max-md:mt-4 md:px-20 max-md:px-6'>
+              <h1 className='w-full text-[42px] md:leading-tight font-bold text-left max-md:text-center max-md:text-2xl'>
                 Voices of Success:
                 Hear from Our Alumni
               </h1>
-              <p className=' text-lg max-md:text-sm text-center w-4/5 h-fit'>
+              <p className=' text-lg max-md:text-sm text-left max-md:text-center w-full h-fit'>
                 Discover the stories of growth, success, and transformation from our alumni&apos;s journeys with us.
               </p>
               <Button
@@ -615,8 +615,8 @@ const Page = () => {
               </Button>
             </div>
 
-            <div className=' w-screen h-fit flex flex-col items-center justify-center gap-8 py-12 max-md:py-6 px-6'>
-              <h1 className='w-full text-4xl max-md:text-2xl text-center font-bold'>
+            <div className=' w-screen h-fit flex flex-col items-center justify-center gap-8 max-md:gap-6 py-12 max-md:py-10 px-6'>
+              <h1 className='w-full text-[42px] md:leading-tight max-md:text-2xl text-center font-bold'>
                 Our Commitment to Quality and Excellence
               </h1>
               <p className='w-full h-fit text-base max-md:text-sm px-80 max-md:px-0 text-center'>
@@ -715,28 +715,28 @@ const Page = () => {
 
         {/* <FAQ /> */}
 
-        <section className=' w-screen h-fit px-16 max-md:px-6 py-6 flex flex-col items-center justify-center overflow-hidden'>
+        <section className=' w-screen h-fit px-16 max-md:px-6 py-12 flex flex-col items-center justify-center md:gap-8 overflow-hidden'>
           <div className=' w-full h-fit py-2 flex items-center justify-center'>
-            <h1 className=' text-4xl max-md:text-3xl max-md:text-center font-bold'>
+            <h1 className=' text-[42px] md:leading-tight max-md:text-3xl max-md:text-center font-bold'>
               Frequently Asked Questions
             </h1>
           </div>
           <div className=' w-full h-fit py-4 flex max-md:flex-col items-center max-md:items-start justify-center max-md:justify-start gap-3'>
-            <div className='max-md:w-full w-1/4 h-full flex md:flex-col justify-center items-start overflow-hidden'>
-              <Button variant={'link'} className=' font-bold text-xl max-md:text-lg'>
+            <div className='max-md:w-full w-1/3 h-full flex md:flex-col justify-center max-md:justify-start items-start md:gap-4 overflow-x-hidden max-md:px-[-10px]'>
+              <Button variant={'link'} className=' font-bold text-2xl max-md:text-lg max-md:pl-0'>
                 About ECCU
               </Button>
-              <Button variant={'link'} className=' text-xl max-md:text-lg'>
+              <Button variant={'link'} className=' text-2xl max-md:text-lg text-[#969696]'>
                 Learning online at ECCU
               </Button>
-              <Button variant={'link'} className=' text-xl max-md:text-lg'>
+              <Button variant={'link'} className=' text-2xl max-md:text-lg text-[#969696]'>
                 Accreditations & Recognitions
               </Button>
-              <Button variant={'link'} className=' text-xl max-md:text-lg'>
+              <Button variant={'link'} className=' text-2xl max-md:text-lg text-[#969696]'>
                 Faculty
               </Button>
             </div>
-            <div className=' w-3/4 max-md:w-full h-full shadow p-3 rounded-xl'>
+            <div className=' w-2/3 max-md:w-full h-full shadow p-3 rounded-xl'>
               <Accordion type="single" collapsible className="w-full">
                 <AccordionItem value="item-1">
                   <AccordionTrigger>What is EC Council University?</AccordionTrigger>
@@ -760,6 +760,12 @@ const Page = () => {
               </Accordion>
             </div>
           </div>
+          <Button
+            className="w-[150px] bg-[#9B1C31] hover:bg-[#621421] text-white py-6 px-12 rounded-md flex items-center justify-center gap-2 z-10"
+          >
+            View More
+            <MoveRight />
+          </Button>
         </section>
         
         <Footer />

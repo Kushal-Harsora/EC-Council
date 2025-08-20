@@ -328,8 +328,14 @@ const Page = () => {
 
         <section className=' h-fit max-md:h-fit w-screen bg-white overflow-hidden grid md:grid-cols-2 max-md:grid-rows-1 px-16 max-md:px-6 py-24 mb-8 max-md:py-6'>
           <div className=' w-full h-full flex flex-col items-start max-md:items-center justify-center gap-6 max-md:gap-2 py-4'>
-            <h1 className='w-4/5 text-[42px] max-md:text-2xl font-bold md:leading-tight'>
+            <h1 className='w-4/5 max-md:hidden md:text-[42px] max-md:text-2xl font-bold md:leading-tight'>
               EC-Council University
+              Where Your Leadership Journey Begins
+            </h1>
+
+            <h1 className='md:hidden max-md:w-full md:text-[42px] max-md:text-2xl font-bold md:leading-tight'>
+              <span className=' text-sm'>EC-Council University</span>
+              <br className='md:hidden' />
               Where Your Leadership Journey Begins
             </h1>
 
@@ -632,7 +638,7 @@ const Page = () => {
                     <br className='max-md:hidden' />
                     $100K+ Salaries
                   </p>
-                  <p className='text-base max-md:text-sm w-full text-left max-md:text-center px-12'>
+                  <p className='text-base max-md:text-sm w-full text-left max-md:text-center px-12 max-md:px-0'>
                     Better Earning Capacity: Half of our
                     graduates achieved six-figure salaries reflecting the exceptional value of our
                     program.
@@ -640,27 +646,27 @@ const Page = () => {
                 </div>
                 <div className='flex flex-col items-center justify-center gap-4 max-md:gap-3'>
                   <h1 className=' text-8xl max-md:text-6xl'>
-                    <span className=' font-medium'>93%</span>
+                    <span className=' font-medium'>93<span className='max-md:text-lg text-6xl'>%</span></span>
                   </h1>
                   <p className='text-xl max-md:text-lg font-medium w-full text-center'>
                     Achieved Their
                     <br />
                     Employment Goals
                   </p>
-                  <p className='text-base w-full max-md:text-sm text-left max-md:text-center px-12'>
+                  <p className='text-base w-full max-md:text-sm text-left max-md:text-center px-12 max-md:px-0'>
                     Job-Ready Skills: Nearly all our students achieved their employment goals demonstrating the transformative impact of an ECCU education.
                   </p>
                 </div>
                 <div className='flex flex-col items-center justify-center gap-4 max-md:gap-3'>
                   <h1 className=' text-8xl max-md:text-6xl'>
-                    <span className=' font-medium'>2</span> <span className='text-4xl'>out of</span> <span className=' font-medium'>3</span>
+                    <span className=' font-medium'>2</span> <span className='text-4xl'>Out of</span> <span className=' font-medium'>3</span>
                   </h1>
                   <p className='text-xl max-md:text-lg font-medium w-full text-center'>
                     Experienced &nbsp;
                     <br className='max-md:hidden' />
                     Significant Growth
                   </p>
-                  <p className='text-base w-full max-md:text-sm text-left max-md:text-center px-12'>
+                  <p className='text-base w-full max-md:text-sm text-left max-md:text-center px-12 max-md:px-0'>
                     Career Advancement: From promotions and pay raises to meaningful role transitions, two-thirds of our graduates advanced significantly in their careers.
                   </p>
                 </div>

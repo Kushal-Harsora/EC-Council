@@ -628,10 +628,10 @@ const Page = () => {
               <p className='w-full h-fit text-base max-md:text-sm px-80 max-md:px-0 text-center'>
                 ECCU&apos;s online cyber security programs are crafted to empower driven professionals to turn their aspirations into reality and achieve their ultimate career dreams.
               </p>
-              <div className='w-full h-fit grid md:grid-cols-3 max-md:grid-rows-3 max-md:gap-3.5'>
+              <div className='w-full h-fit grid md:grid-cols-3 max-md:grid-rows-3 max-md:gap-1.5 md:pr-12'>
                 <div className='flex flex-col items-center justify-center gap-4 max-md:gap-3'>
                   <h1 className=' text-8xl max-md:text-6xl'>
-                    <span className='font-medium'>1</span> <span className='text-4xl'>in</span> <span className=' font-medium'>2</span>
+                    <span className='font-medium'>1</span> <span className='max-md:text-lg md:text-6xl font-medium'>in</span> <span className=' font-medium'>2</span>
                   </h1>
                   <p className='text-xl max-md:text-lg font-medium w-full text-center'>
                     Secured &nbsp;
@@ -646,7 +646,7 @@ const Page = () => {
                 </div>
                 <div className='flex flex-col items-center justify-center gap-4 max-md:gap-3'>
                   <h1 className=' text-8xl max-md:text-6xl'>
-                    <span className=' font-medium'>93<span className='max-md:text-lg text-6xl'>%</span></span>
+                    <span className=' font-medium'>93<span className='max-md:text-lg md:text-6xl font-medium'>%</span></span>
                   </h1>
                   <p className='text-xl max-md:text-lg font-medium w-full text-center'>
                     Achieved Their
@@ -659,7 +659,7 @@ const Page = () => {
                 </div>
                 <div className='flex flex-col items-center justify-center gap-4 max-md:gap-3'>
                   <h1 className=' text-8xl max-md:text-6xl'>
-                    <span className=' font-medium'>2</span> <span className='text-4xl'>Out of</span> <span className=' font-medium'>3</span>
+                    <span className=' font-medium'>2</span> <span className='max-md:text-lg md:text-6xl font-medium'>Out of</span> <span className=' font-medium'>3</span>
                   </h1>
                   <p className='text-xl max-md:text-lg font-medium w-full text-center'>
                     Experienced &nbsp;
@@ -742,7 +742,7 @@ const Page = () => {
                 Faculty
               </Button>
             </div>
-            <div className=' w-2/3 max-md:w-full h-full shadow p-3 rounded-xl'>
+            <div className=' w-2/3 max-md:w-full h-full shadow p-5'>
               <Accordion type="single" collapsible className="w-full">
                 <AccordionItem value="item-1">
                   <AccordionTrigger>What is EC Council University?</AccordionTrigger>
@@ -760,6 +760,8 @@ const Page = () => {
                   <AccordionTrigger>Is ECCU the best cyber security university?</AccordionTrigger>
                   <AccordionContent>
                     At EC-Council University (ECCU), we believe that the “best” cyber security university depends on what matters most to each student. When considering the right cyber security program for you, it&apos;s important to evaluate factors such as industry-aligned curriculum, flexible learning options, certification pathways, expert faculty, learning platform, and support. The best university should be the one that prepares you to take lead in the cyber security industry while also fitting your busy schedule and professional goals.
+                    <br />
+                    <br />
                     ECCU is a globally recognized, accredited university specializing in cyber security education, offering career-focused programs designed to transform you to a cyber security leader. With an emphasis on practical learning, hands-on labs, and alignment with industry certifications, thousands of students choose ECCU to advance their cyber security careers. We encourage you to evaluate your options and make an informed decision based on your goals and priorities. If you have any questions about ECCU or need assistance, please fill out the enquiry form to connect with our training consultant for guidance.
                   </AccordionContent>
                 </AccordionItem>

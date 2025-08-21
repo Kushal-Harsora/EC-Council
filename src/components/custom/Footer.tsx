@@ -1,15 +1,20 @@
 "use client"
+
+// System Imports
+import Image from "next/image"
+
+// Icon and Style Imports
 import { FaYoutube, FaLinkedinIn, FaInstagram, FaFacebookF } from "react-icons/fa";
-import { ChevronUp } from "lucide-react";
-// bg-[#0a100d]
-export default function Footer() {
+
+
+const Footer = () => {
     const socials = [
         { icon: <FaLinkedinIn />, href: "https://linkedin.com" },
         { icon: <FaFacebookF />, href: "https://facebook.com" },
         { icon: <FaInstagram />, href: "https://instagram.com" },
         { icon: <FaYoutube />, href: "https://youtube.com" },
     ];
-    // font-[satoshi-variable]
+
     return (
         <footer className="bg-[#0a100d] w-screen h-fit text-white overflow-hidden">
             <style jsx>{`
@@ -109,7 +114,7 @@ padding:5px;
                                             href={s.href}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="flex items-center justify-center w-9 h-9 border border-[#9B1C31] rounded-full text-red-700 hover:bg-red-900 hover:text-white transition-colors duration-300 md:h[20px]"
+                                            className="flex items-center justify-center max-md:w-[28.69px] max-md:h-[28.69px] md:w-[38.29px] md:h-[38.29px] border border-[#9B1C31] rounded-full text-red-700 hover:bg-red-900 hover:text-white transition-colors duration-300 md:h[20px]"
                                         >
                                             {s.icon}
                                         </a>
@@ -135,23 +140,26 @@ padding:5px;
                     <hr className="border-gray-700 mb-4" />
                     <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4 text-sm text-gray-400 py-4">
                         {/* Terms + Privacy + Cookie */}
-                        <div className="flex flex-wrap justify-center gap-4 order-2 md:order-1">
+                        <div className="flex flex-row flex-wrap justify-center gap-4 max-md:text-xs md:text-base md:order-1">
                             <a href="#">Terms</a>
                             <a href="#">Privacy</a>
                             <a href="#">Cookie Policy</a>
+                            <p className="text-center md:hidden">
+                                © EC-Council University
+                            </p>
                         </div>
 
                         {/* Copyright */}
-                        <p className="text-center order-1 md:order-2">
-                            © {new Date().getFullYear()} Your Company. All rights reserved.
+                        <p className="text-center order-1 md:order-2 max-md:hidden">
+                            © EC-Council University
                         </p>
 
                         {/* Back to Top */}
                         <button
                             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-                            className="bg-[#9B1C31] hover:bg-gray-700 text-white px-3 py-2 sm:px-4 sm:py-2 border border-[#9B1C31] rounded-full cursor-pointer order-3 mx-auto sm:mx-0"
+                            className="max-md:hidden h-[50px] w-[50px] flex flex-row items-center justify-center bg-[#9B1C314D] hover:bg-gray-700 text-white px-3 py-2 sm:px-4 sm:py-2 border border-[#9B1C31] rounded-full cursor-pointer order-3 mx-auto sm:mx-0"
                         >
-                            <ChevronUp className="w-4 h-4 sm:w-5 sm:h-5" />
+                            <Image src={'/footer-icon.svg'} alt="Icon" width={25} height={25} className="text-white" />
                         </button>
                     </div>
                 </div>
@@ -161,3 +169,4 @@ padding:5px;
     );
 }
 
+export default Footer;

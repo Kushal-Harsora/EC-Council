@@ -41,11 +41,11 @@ const Card = ({ title, description, image }: { title: string, description: strin
         style={{ backgroundImage: `url(${image})` }}
       >
         <div
-          className="absolute bottom-0 w-full h-[30%] backdrop-blur-lg bg-[#1C253C99] rounded-t-xl z-10 flex items-center justify-center"
+          className="absolute bottom-0 w-full h-[35%] backdrop-blur-lg bg-[#1C253C99] rounded-t-xl z-10 flex items-center justify-center"
         >
-          <div className="px-4 w-full text-white">
-            <h3 className="text-2xl font-semibold">{title}</h3>
-            <p className="text-base text-wrap text-justify overflow-hidden text-white">
+          <div className="px-8 w-full text-white">
+            <h3 className="text-xl max-md:text-base font-medium mb-3 max-md:mb-2">{title}</h3>
+            <p className="text-base max-md:text-sm font-normal text-wrap text-left overflow-hidden text-white">
               {description}
             </p>
           </div>
@@ -76,8 +76,8 @@ const ProgramCard = ({ title, description, image }: { title: string, description
         variants={programCardVariants}
         className="absolute bottom-0 w-full h-full backdrop-blur-lg bg-black/20 z-10"
       >
-        <div className="p-4 w-full h-[25%] text-white">
-          <h3 className="text-2xl flex flex-row justify-between items-center font-semibold">
+        <div className="p-4 w-full h-[25%] text-white mb-4 max-md:mb-0">
+          <h3 className="text-2xl flex flex-row justify-between items-center font-normal">
             {title}
             <CircleChevronUp
               className={`md:hidden w-[32px] aspect-square cursor-pointer transform transition-transform duration-300 ${isHovered ? 'rotate-180' : ''
@@ -86,7 +86,7 @@ const ProgramCard = ({ title, description, image }: { title: string, description
             />
           </h3>
         </div>
-        <p className="text-base text-wrap text-justify max-h-[225px] overflow-hidden text-white px-4">
+        <p className="text-base text-wrap text-left max-h-[225px] overflow-hidden text-white px-4">
           {description}
         </p>
         <div className="w-full max-w-[325px] max-h-[75px] h-full flex items-center justify-start px-4">
@@ -108,69 +108,69 @@ const ProgramCard = ({ title, description, image }: { title: string, description
 // Sample Data
 const programData1 = [
   {
-    title: 'Program 1',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex similique, nihil provident consequuntur quam esse explicabo atque architecto voluptatibus, soluta distinctio iusto reiciendis, at rerum deserunt maiores natus quibusdam praesentium? Libero saepe adipisci quaerat, qui dolore.',
+    title: 'Master of Science in Cyber Security',
+    description: 'Ranked among Fortune®’s ‘Top 10 Best Online Master’s in Cyber Security,’ this program offers five career-focused specializations, preparing you for leadership roles in the rapidly evolving cyber security industry.',
     image: '/assets/p1.png',
   },
   {
-    title: 'Program 2',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex similique, nihil provident consequuntur quam esse explicabo atque architecto voluptatibus, soluta distinctio iusto reiciendis, at rerum deserunt maiores natus quibusdam praesentium? Libero saepe adipisci quaerat, qui dolore.',
+    title: 'Master of Science in Computer Science',
+    description: 'Designed for aspiring cyber security leaders, this master’s program bridges technical expertise and executive strategy, empowering you to safeguard critical infrastructures, mitigate risks, and shape cyber security policy on a global scale.',
     image: '/assets/p2.png',
   },
 ];
 
 const programData2 = [
   {
-    title: 'Program 3',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex similique, nihil provident consequuntur quam esse explicabo atque architecto voluptatibus, soluta distinctio iusto reiciendis, at rerum deserunt maiores natus quibusdam praesentium? Libero saepe adipisci quaerat, qui dolore.',
+    title: 'Bachelor of Science in Cyber Security',
+    description: 'Ranked among Fortune®’s ‘Top 10 Best Online Master’s in Cyber Security,’ this program offers five career-focused specializations, preparing you for leadership roles in the rapidly evolving cyber security industry.',
     image: '/assets/p3.png',
   },
   {
-    title: 'Program 4',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex similique, nihil provident consequuntur quam esse explicabo atque architecto voluptatibus, soluta distinctio iusto reiciendis, at rerum deserunt maiores natus quibusdam praesentium? Libero saepe adipisci quaerat, qui dolore.',
+    title: 'Graduate Certificate Program',
+    description: 'Building the competencies cyber security professionals need to advance into managerial, directorial, and CIO roles, the Graduate Certificate Program equips you with specialized IT security training and strategic insight into organizational structures.',
     image: '/assets/p4.png',
   },
   {
-    title: 'Program 5',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex similique, nihil provident consequuntur quam esse explicabo atque architecto voluptatibus, soluta distinctio iusto reiciendis, at rerum deserunt maiores natus quibusdam praesentium? Libero saepe adipisci quaerat, qui dolore.',
+    title: 'Non-Degree Certificates & Courses',
+    description: 'Bridging structured learning with professional growth, ECCU’s Non-Degree courses help Develop hands on expertise through you gain specialized cyber security expertise without having to commit to a full-fledged degree, course credits toward a degree program and a certification along with the course.',
     image: '/assets/p5.png',
   },
   {
-    title: 'Program 6',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex similique, nihil provident consequuntur quam esse explicabo atque architecto voluptatibus, soluta distinctio iusto reiciendis, at rerum deserunt maiores natus quibusdam praesentium? Libero saepe adipisci quaerat, qui dolore.',
+    title: 'Center of Professional Education',
+    description: 'Combining academic rigor with hands-on application, ECCU’s Center of Professional Education offers online non-degree non-credit continuing education courses that equip IT and cyber security professionals with specialized expertise to address evolving threats.',
     image: '/assets/p6.png',
   },
 ];
 
 const whyUsData = [
   {
-    title: 'Program 1',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex similique.',
+    title: 'Flexible Online Learning',
+    description: 'Graduate with a degree, whether on sabbatical or working full-time.',
     image: '/assets/b1.png',
   },
   {
-    title: 'Program 2',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex similique.',
+    title: 'Hands-on Experience',
+    description: 'Develop hands-on expertise with virtual labs and capstone projects.',
     image: '/assets/b2.png',
   },
   {
-    title: 'Program 3',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex similique.',
+    title: 'Industry Aligned Curriculum',
+    description: 'Get industry-ready with programs built for today’s market needs.',
     image: '/assets/b3.jpg',
   },
   {
-    title: 'Program 4',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex similique.',
+    title: 'Certifications Embedded',
+    description: 'Kickstart your career with a degree along with EC-Council certifications.',
     image: '/assets/b4.png',
   },
   {
-    title: 'Program 5',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex similique.',
+    title: 'Credit Transfers',
+    description: 'Transfer up to 90 credits from prior learning and certifications.',
     image: '/assets/b5.png',
   },
   {
-    title: 'Program 6',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex similique.',
+    title: 'Learning with Ease',
+    description: 'Experience an all-in-one learning platform designed for seamless navigation.',
     image: '/assets/b6.png',
   },
 ];
@@ -373,19 +373,21 @@ const Page = () => {
               alt="Join1"
               width={0}
               height={0}
-              sizes="(max-width: 768px) 50vw, 320px"
-              className="w-[80%] max-w-[320px] max-md:max-w-[250px] h-auto absolute top-[10%] left-[5%] object-cover aspect-square border-[7.5px] border-white rounded-3xl z-20 scale-x-[-1]"
+              sizes="(max-width: 768px) 50vw, 350px"
+              className="w-[80%] max-w-[350px] max-md:max-w-[250px] h-auto absolute top-0 left-[15%] object-cover aspect-square border-[7.5px] border-white rounded-3xl z-20 scale-x-[-1]"
             />
             <Image src="/assets/home3.png"
               alt="Join2"
               width={0}
               height={0}
-              sizes="(max-width: 768px) 50vw, 320px"
-              className='w-[80%] max-w-[320px] max-md:max-w-[250px] h-auto absolute top-[25%] left-[40%] object-cover aspect-square rounded-3xl z-10'
+              sizes="(max-width: 768px) 50vw, 350px"
+              className='w-[80%] max-w-[350px] max-md:max-w-[250px] h-auto absolute top-[25%] left-[45%] object-cover aspect-square rounded-3xl z-10'
             />
           </div>
         </section>
+
         {/* BestClass Section */}
+
         <section className=' h-fit w-screen bg-gray-50 overflow-hidden grid md:grid-cols-2 max-md:grid-rows-1 py-12 px-16 max-md:px-6'>
           <div className=' w-full h-full flex flex-col items-start max-md:items-center justify-center gap-3.5 max-md:gap-8 py-4'>
             <h1 className=' text-[42px] md:leading-tight max-md:text-2xl font-bold'>
@@ -481,7 +483,7 @@ const Page = () => {
 
         {/* Program Section */}
 
-        <div className="w-screen h-fit bg-white max-md:px-6 px-16 py-12 flex flex-col items-center justify-center gap-6">
+        <div className="w-screen h-fit bg-white max-md:px-6 px-16 py-12 mt-6 flex flex-col items-center justify-center gap-6">
           <div className='h-full max-md:h-fit grid md:grid-cols-2 gap-3 max-md:gap-4'>
             <div className=' w-[95%] max-md:w-full h-full flex flex-col items-start justify-start gap-4 max-md:py-4'>
               <h1 className="w-full text-[42px] md:leading-tight max-md:text-2xl font-bold text-left">
@@ -517,7 +519,7 @@ const Page = () => {
 
         {/* Why-Us Section */}
 
-        <section className=' w-screen h-fit flex flex-col items-center justify-around gap-4 px-16 max-md:px-6'>
+        <section className=' w-screen h-fit flex flex-col items-center justify-around gap-4 px-16 mt-6 max-md:px-6'>
           <div className=' w-full h-fit py-6 flex flex-col items-center justify-center gap-8 max-md:gap-4'>
             <h1 className=' text-[42px] md:leading-tight max-md:text-2xl text-center font-bold'>
               Why EC-Council University is Right for You
@@ -550,8 +552,8 @@ const Page = () => {
 
         {/* Education Section */}
 
-        <section className=' w-screen h-fit flex flex-col items-center justify-center px-16 max-md:px-6 overflow-hidden mt-12 max-md:mt-8'>
-          <div className=' w-screen h-fit py-6 flex flex-col items-center justify-center gap-8 max-md:gap-4'>
+        <section className=' w-screen h-fit flex flex-col items-center justify-center px-16 max-md:px-6 overflow-hidden my-16 max-md:mt-8'>
+          <div className=' w-screen h-fit py-6 flex flex-col items-center justify-center gap-8 mb-16 max-md:gap-4'>
             <h1 className=' text-[42px] md:leading-tight max-md:text-2xl text-center font-bold'>
               Cyber Security Education Reimagined
             </h1>
@@ -568,7 +570,7 @@ const Page = () => {
             />
           </div>
 
-          <div className=' h-fit w-screen flex flex-col items-center justify-center bg-[#202A40] py-8'>
+          <div className=' h-fit w-screen flex flex-col items-center justify-center bg-[#202A40] pt-12 max-md:pt-6 pb-24 max-md:pb-12'>
             <h1 className=' text-[42px] md:leading-tight max-md:text-3xl font-bold text-white text-center w-full h-fit py-12'>
               Accreditations and Recognitions
             </h1>
@@ -581,8 +583,8 @@ const Page = () => {
                     alt={`Image ${index + 1}`}
                     width={0}
                     height={0}
-                    sizes="(max-width: 640px) 150px, (max-width: 1024px) 200px"
-                    className="w-full h-[60px] object-contain rounded-xl z-10 p-2 mx-12 filter brightness-0 invert"
+                    sizes="(max-width: 640px) 150px, (max-width: 1024px) 250px"
+                    className="w-full h-[80px] object-contain rounded-xl z-10 p-2 mx-12 filter brightness-0 invert"
                   />
                 </div>
               ))}
@@ -592,9 +594,9 @@ const Page = () => {
 
         {/* Alumni */}
 
-        <section className=' w-screen h-fit flex flex-col items-center justify-center px-8 max-md:px-2 gap-6 py-4 overflow-hidden'>
-          <div className=' grid md:grid-cols-2 max-md:grid-rows-2 py-8'>
-            <div className=' w-full h-full flex items-center justify-center md:rounded-3xl overflow-hidden'>
+        <section className=' w-screen h-fit flex flex-col items-center justify-center px-8 max-md:px-2 gap-6 py-4 max-md:py-2 overflow-hidden'>
+          <div className=' grid md:grid-cols-2 max-md:grid-rows-2 py-8 max-md:py-0'>
+            <div className=' md:pl-8 w-full h-full flex items-center justify-center md:rounded-3xl overflow-hidden'>
               <video
                 src="/assets/alumni.mp4"
                 autoPlay
@@ -621,14 +623,14 @@ const Page = () => {
               </Button>
             </div>
 
-            <div className=' w-screen h-fit flex flex-col items-center justify-center gap-8 max-md:gap-6 py-12 max-md:py-10 px-6'>
+            <div className=' w-screen h-fit flex flex-col items-center justify-center gap-8 max-md:gap-6 py-12 mt-12 max-md:py-10 px-6'>
               <h1 className='w-full text-[42px] md:leading-tight max-md:text-2xl text-center font-bold'>
                 Our Commitment to Quality and Excellence
               </h1>
-              <p className='w-full h-fit text-base max-md:text-sm px-80 max-md:px-0 text-center'>
+              <p className='w-full h-fit text-base max-md:text-sm px-80 max-md:px-0 text-center mb-6'>
                 ECCU&apos;s online cyber security programs are crafted to empower driven professionals to turn their aspirations into reality and achieve their ultimate career dreams.
               </p>
-              <div className='w-full h-fit grid md:grid-cols-3 max-md:grid-rows-3 max-md:gap-1.5 md:pr-12'>
+              <div className='w-full h-fit grid md:grid-cols-3 max-md:grid-rows-3 max-md:gap-1.5 md:pr-44 md:px-24'>
                 <div className='flex flex-col items-center justify-center gap-4 max-md:gap-3'>
                   <h1 className=' text-8xl max-md:text-6xl'>
                     <span className='font-medium'>1</span> <span className='max-md:text-lg md:text-6xl font-medium'>in</span> <span className=' font-medium'>2</span>

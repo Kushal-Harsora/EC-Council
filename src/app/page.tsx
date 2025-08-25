@@ -192,7 +192,7 @@ const Page = () => {
 
         <section className='relative top-0 left-0 h-screen w-screen flex flex-col items-center'
           style={{
-            background: `linear-gradient(222.61deg, rgba(0, 0, 0, 0) 20.82%, rgba(0, 0, 0, 0.4) 45.72%), url('/assets/home.jpg')`,
+            background: `linear-gradient(222.61deg, rgba(0, 0, 0, 0) 20.82%, rgba(0, 0, 0, 0.4) 45.72%), url('/assets/home.webp')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
